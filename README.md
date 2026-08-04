@@ -2,12 +2,15 @@
 
 CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `list_countries` | List all countries with ISO codes, capitals, phone codes, currencies, and regions. Returns ~250 countries. Useful for building dropdowns or validating country data. |
+| `get_states` | Get all states or provinces for a country by ISO2 code (e.g., "US", "IN", "BR"). Returns state names, codes, and types. |
+| `get_cities` | Get cities for a country, optionally filtered by state. Pass country_code (e.g., "US") and optionally state_code (e.g., "CA") to narrow results. |
 
 ## Quick Start
 
@@ -23,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 965+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +50,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
