@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/country-state-city",
   "title": "Country State City",
   "description": "CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/country-state-city",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-country-state-city",

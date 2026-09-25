@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-country-state-city",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c4a83068e5b66eb27a2140dc645727844b734cc1f3b025456735d8ad08778ea5",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-b64b9e0e0ab4524f77a873f9c73c921fff9530c03078c2c9d78b6c6e5145c7fd",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
