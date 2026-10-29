@@ -1,0 +1,64 @@
+[
+  {
+    "name": "list_countries",
+    "description": "List all countries with ISO codes, capitals, phone codes, currencies, and regions. Returns ~250 countries. Useful for building dropdowns or validating country data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "CountryStateCity API key"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "get_states",
+    "description": "Get all states or provinces for a country by ISO2 code (e.g., \"US\", \"IN\", \"BR\"). Returns state names, codes, and types.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "CountryStateCity API key"
+        },
+        "country_code": {
+          "type": "string",
+          "description": "ISO2 country code (e.g., \"US\", \"CA\", \"GB\", \"DE\")"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "country_code"
+      ]
+    }
+  },
+  {
+    "name": "get_cities",
+    "description": "Get cities for a country, optionally filtered by state. Pass country_code (e.g., \"US\") and optionally state_code (e.g., \"CA\") to narrow results.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "CountryStateCity API key"
+        },
+        "country_code": {
+          "type": "string",
+          "description": "ISO2 country code (e.g., \"US\", \"IN\")"
+        },
+        "state_code": {
+          "type": "string",
+          "description": "State/province code to filter by (e.g., \"CA\", \"NY\", \"TX\")"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "country_code"
+      ]
+    }
+  }
+]

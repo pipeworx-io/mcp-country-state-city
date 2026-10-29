@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-country-state-city",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-country-state-city": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "country-state-city"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-country-state-city.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/country-state-city",
   "pipeworx": {
-    "sourceHash": "v1-fdb27ad477e67fbf2708db3c0095a0df66d1c5593165e84077ad27a6c02ff81e",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "country-state-city",
+    "gatewaySlug": "country-state-city",
+    "sourceHash": "v1-27abec90dfaa95387050f1071d93af8c9d08ffb7a895c01207542eedfb9a5c5f",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
