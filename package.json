@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-country-state-city",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "country-state-city",
     "gatewaySlug": "country-state-city",
-    "sourceHash": "v1-27abec90dfaa95387050f1071d93af8c9d08ffb7a895c01207542eedfb9a5c5f",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-0dd5af04d1531b1b48278f03e321987f4c3f9447f84b1a29f0f251687a81871a",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
