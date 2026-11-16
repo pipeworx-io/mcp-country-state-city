@@ -1,15 +1,15 @@
 # mcp-country-state-city
 
-CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)
+Unofficial CountryStateCity MCP — wraps CountryStateCity API (api.countrystatecity.in/v1)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1863+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2006+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `list_countries` | List all countries with ISO codes, capitals, phone codes, currencies, and regions. Returns ~250 countries. Useful for building dropdowns or validating country data. |
-| `get_states` | Get all states or provinces for a country by ISO2 code (e.g., "US", "IN", "BR"). Returns state names, codes, and types. |
+| `country_state_city_list_countries` | List all countries with ISO codes, capitals, phone codes, currencies, and regions. Returns ~250 countries. Useful for building dropdowns or validating country data. |
+| `country_state_city_get_states` | Get all states or provinces for a country by ISO2 code (e.g., "US", "IN", "BR"). Returns state names, codes, and types. |
 | `get_cities` | Get cities for a country, optionally filtered by state. Pass country_code (e.g., "US") and optionally state_code (e.g., "CA") to narrow results. |
 
 ## Quick Start
@@ -56,7 +56,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1863+ data sources. The
+Both URLs reach the same gateway and the same 2006+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

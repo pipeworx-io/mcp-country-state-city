@@ -1,6 +1,6 @@
 [
   {
-    "name": "list_countries",
+    "name": "country_state_city_list_countries",
     "description": "List all countries with ISO codes, capitals, phone codes, currencies, and regions. Returns ~250 countries. Useful for building dropdowns or validating country data.",
     "inputSchema": {
       "type": "object",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "name": "get_states",
+    "name": "country_state_city_get_states",
     "description": "Get all states or provinces for a country by ISO2 code (e.g., \"US\", \"IN\", \"BR\"). Returns state names, codes, and types.",
     "inputSchema": {
       "type": "object",
